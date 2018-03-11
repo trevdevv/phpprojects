@@ -9,9 +9,9 @@
 		$name = htmlspecialchars($_POST['name']);
 		$email = htmlspecialchars($_POST['email']);
 		$message = htmlspecialchars($_POST['message']);
-
+        
 		// Check Required Fields
-		if(!empty($email) && !empty($name) && !empty($message)){
+            if(!empty($email) && !empty($name) && !empty($message)){
 			// Passed
 			// Check Email
 			if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
@@ -20,7 +20,7 @@
 				$msgClass = 'alert-danger';
 			} else {
 				// Passed
-				$toEmail = 'support@traversymedia.com';
+				$toEmail = 'support@trevdevvmedia.com';
 				$subject = 'Contact Request From '.$name;
 				$body = '<h2>Contact Request</h2>
 					<h4>Name</h4><p>'.$name.'</p>
@@ -56,36 +56,69 @@
 <html>
 <head>
 	<title>Contact Us</title>
-	<link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
 </head>
 <body>
-	<nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">    
-          <a class="navbar-brand" href="index.php">My Website</a>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.php">TrevDevv</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Me</a>
+                </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Section -->
+    <section>
+        <h1>SECTION</h1>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Contact Form -->
+        <div class="container">	
+            <?php if($msg != ''): ?>
+                <div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
+            <?php endif; ?>
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" class="form-control" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" name="email" class="form-control" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" class="form-control"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
+            </div>
+            <br>
+            <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+        </form>
         </div>
-      </div>
-    </nav>
-    <div class="container">	
-    	<?php if($msg != ''): ?>
-    		<div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
-    	<?php endif; ?>
-      <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-	      <div class="form-group">
-		      <label>Name</label>
-		      <input type="text" name="name" class="form-control" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
-	      </div>
-	      <div class="form-group">
-	      	<label>Email</label>
-	      	<input type="text" name="email" class="form-control" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
-	      </div>
-	      <div class="form-group">
-	      	<label>Message</label>
-	      	<textarea name="message" class="form-control"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
-	      </div>
-	      <br>
-	      <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
+    </footer>
 </body>
 </html>
