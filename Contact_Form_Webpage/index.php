@@ -56,12 +56,11 @@
 <html>
 <head>
 	<title>Contact Us</title>
-	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">    
 </head>
 <body>
     <!-- Header -->
     <header>
-        hfuehfuesfu
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.php">TrevDevv</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,7 +100,8 @@
                         <div class="card-body">
                             <h4 class="card-title">Primary card title</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target=".modal-1">Learn More</button>
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">Learn More</button>
+                            <!-- Button trigger modal -->
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Primary card title</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button type="button" class="btn btn-secondar" data-toggle="modal" data-target=".modal-2">Learn More</button>
+                            <button type="button" class="btn btn-secondar" data-toggle="modal" data-target="modal-2">Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Primary card title</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target=".modal-3">Learn More</button>
+                            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="modal-3">Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -129,6 +129,27 @@
         </div>
     </section>
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Footer -->
     <footer>
         <!-- Contact Form -->
@@ -157,5 +178,6 @@
     <!-- Bootstrap JS&Jquery Script -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
