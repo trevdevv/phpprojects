@@ -57,7 +57,7 @@
 <head>
 	<title>Contact Us</title>
 	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">    
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <!-- Header -->
@@ -74,10 +74,10 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Experience</a>
+                    <a class="nav-link" href="#">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact Me</a>
@@ -118,7 +118,7 @@
                     <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
                         <div class="card-header">Project 2</div>
                         <div class="card-body">
-                            <h4 class="card-title">Card game War <br>IOS App</h4>
+                            <h4 class="card-title">Card game War <br>iOS App</h4>
                             <p class="card-text">Using the Swift programming language and the xCode IDE, I created the famous card game 'WAR'. </p>
                             <button type="button" class="btn btn-secondar" data-toggle="modal" data-target="#modal2">Learn More</button>
                         </div>
@@ -144,17 +144,17 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Tic Tac Toe Game (Minmax)</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <img src="imgs/TTTBoard.png" alt="..." class="img-thumbnail rounded mx-auto d-block">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <a class = "btn btn-primary"href="https://codepen.io/trevdevv/">Code Pen</a>
       </div>
     </div>
   </div>
@@ -165,17 +165,17 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Card game War iOS App</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <img src="imgs/warApp.png" alt="..." class="img-thumbnail rounded mx-auto d-block">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <a class = "btn btn-primary"href="https://github.com/trevdevv">Git Hub</a>
       </div>
     </div>
   </div>
@@ -186,22 +186,42 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Selling Tires: Customer Website</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <img src="imgs/tireswebsite.png" alt="..." class="img-thumbnail rounded mx-auto d-block">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <a class = "btn btn-primary"href="http://">Web Site</a>
       </div>
     </div>
   </div>
 </div>
 <br>
+
+<!-- Skills Section -->
+<section>
+<div class="skills">
+	<div class="header">
+		<h2>SKILLS CARD</h2>
+	</div>
+	<div data-label="HTML5" data-level="90" class="chart"><span></span><p></p></div>
+	<div data-label="CSS3/SCSS/LESS" data-level="90" class="chart"><span></span><p></p></div>
+	<div data-label="JQUERY/JS" data-level="80" class="chart"><span></span><p></p></div>
+	<div data-label="WORDPRESS" data-level="80" class="chart"><span></span><p></p></div>
+	<div data-label="PHP/MYSQL" data-level="70" class="chart"><span></span><p></p></div>
+	<div data-label="SHOPIFY" data-level="67" class="chart"><span></span><p></p></div>
+	<div data-label="FUEL/CODEIGNITER" data-level="66" class="chart"><span></span><p></p></div>
+	<div data-label="ACTIONSCRIPT" data-level="65" class="chart"><span></span><p></p></div>
+	<div data-label="FACEBOOK/TWITTER API" data-level="64" class="chart"><span></span><p></p></div>
+	<div data-label="PHOTOSHOP" data-level="63" class="chart"><span></span><p></p></div>
+</div>
+
+</section>
     <!-- Footer -->
     <footer id = "contact-form">
         <!-- Contact Form -->
@@ -232,6 +252,6 @@
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
