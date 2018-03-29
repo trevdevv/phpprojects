@@ -211,24 +211,48 @@
     </div>
 
     <div class="container skills">
-    <dl>
-        <dt>HTML</dt>
-        <dd class="skill-percent html" data-percent="90"></dd>
-        <dt>CSS</dt>
-        <dd class="skill-percent css" data-percent="85"></dd>
-        <dt>jQuery</dt>
-        <dd class="skill-percent jquery" data-percent="60"></dd>
-        <dt>SCSS</dt>
-        <dd class="skill-percent scss" data-percent="50"></dd>
-        <dt>Javascript</dt>
-        <dd class="skill-percent javascript" data-percent="40"></dd>
-        <dt>PHP</dt>
-        <dd class="skill-percent php" data-percent="10"></dd>
-    </dl>
+        <div class="row">
+            <div class="col-sm">
+                <h1>Front End</h1>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd class="skill-percent html" data-percent="95"></dd>
+                    <dt>Javascript</dt>
+                    <dd class="skill-percent css" data-percent="90"></dd>
+                    <dt>CSS</dt>
+                    <dd class="skill-percent jquery" data-percent="80"></dd>
+                </dl>
+            </div>
+            <div class="col-sm">
+                <h1>Back End</h1>
+                <dl>
+                    <dt>PHP</dt>
+                    <dd class="skill-percent html" data-percent="95"></dd>
+                    <dt>Node JS</dt>
+                    <dd class="skill-percent css" data-percent="90"></dd>
+                    <dt>Python</dt>
+                    <dd class="skill-percent jquery" data-percent="80"></dd>
+                </dl>
+            </div>
+            <div class="col-sm">
+                <h1>CMS</h1>
+                <dl>
+                    <dt>Word Press</dt>
+                    <dd class="skill-percent html" data-percent="95"></dd>
+                    <dt>Drupal</dt>
+                    <dd class="skill-percent css" data-percent="90"></dd>
+                    <dt>WIX</dt>
+                    <dd class="skill-percent jquery" data-percent="80"></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="container spacer"></div>
     </div>
+                
 
-    <div class="container spacer">
-    </div>
+    
+
+
 </section>
 <br>
     <!-- Footer -->

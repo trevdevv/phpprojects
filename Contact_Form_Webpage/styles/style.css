@@ -27,7 +27,8 @@ h1 {
 	position: relative;
 	opacity: 1;
 	transform: scale(1);
-	transition: transform 0.5s ease, opacity 1s ease;
+  transition: transform 0.5s ease, opacity 1s ease;
+  color: #fff;
 }
 
 .is-loading h1 {
@@ -127,11 +128,16 @@ div#header-down-arrow a span {
 
 /* Skills Section */
 section#skills .container {
-  max-width: 480px;
+  /* max-width: 480px; */
   position: relative;
   margin: 0 auto;
   padding: 0 10px;
   top: 50px;
+}
+section#skills .skills .row h1 {
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
 }
 section#skills .container:before, .container:after {
   content: "";
@@ -168,7 +174,7 @@ section#skills div.spacer.header h1.header-scroll {
 }
 
 section#skills .spacer {
-  min-height: 20rem;
+  min-height: 10rem;
 }
 dt:after {
   width: 100%;
