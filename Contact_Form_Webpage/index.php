@@ -56,9 +56,11 @@
 <html>
 <head>
 	<title>Trevdevv Media</title>
-	<!-- <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">     -->
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">     -->
+    <!-- <link rel="stylesheet" href="styles/font-awesome.css"> -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/fontawesome-all.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -72,16 +74,16 @@
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#projects-counter">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Me</a>
+                    <a class="nav-link" href="#contact-form">Contact Me</a>
                 </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -96,12 +98,56 @@
             Trev Devv Media
         </h1>
         <div id="header-down-arrow" class = "arrow">
-            <a id = "arw-btn" href="#projects"><span></span></a>
+            <a id = "arw-btn" href="#projects-counter"><span></span></a>
         </div>
     </div>
     <br>
-    <!-- Section -->
+
+    <!-- Section - Project Counter -->
+    <section id="projects-counter">
+        <div class="sectiontitle">
+            <h2>Projects statistics</h2>
+            <span class="headerLine"></span>
+        </div>
+        <div id="projectFacts" class="sectionClass">
+            <div class="fullWidth eight columns">
+                <div class="projectFactsWrap ">
+                    <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                        <i class="fas fa-briefcase fa-5x"></i>
+                        <p id="number1" class="number">12</p>
+                        <span></span>
+                        <p>Projects done</p>
+                    </div>
+                    <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                        <i class="fas fa-smile fa-5x"></i>
+                        <p id="number2" class="number">55</p>
+                        <span></span>
+                        <p>Happy clients</p>
+                    </div>
+                    <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                        <i class="fas fa-coffee fa-5x"></i>
+                        <p id="number3" class="number">359</p>
+                        <span></span>
+                        <p>Cups of coffee</p>
+                    </div>
+                    <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+                        <i class="fas fa-camera fa-5x"></i>
+                        <p id="number4" class="number">246</p>
+                        <span></span>
+                        <p>Photos taken</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section - Project Details-->
     <section id = "projects">
+    <div class="sectiontitle">
+        <h2>Projects Details</h2>
+        <span class="headerLine"></span>
+    </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
