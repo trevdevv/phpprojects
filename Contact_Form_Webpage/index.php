@@ -55,8 +55,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact Us</title>
-	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">    
+	<title>Trevdevv Media</title>
+	<!-- <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">     -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -204,26 +205,35 @@
 <br>
 
 <!-- Skills Section -->
-<section>
-<div class="skills">
-	<div class="header">
-		<h2>SKILLS CARD</h2>
-	</div>
-	<div data-label="HTML5" data-level="90" class="chart"><span></span><p></p></div>
-	<div data-label="CSS3/SCSS/LESS" data-level="90" class="chart"><span></span><p></p></div>
-	<div data-label="JQUERY/JS" data-level="80" class="chart"><span></span><p></p></div>
-	<div data-label="WORDPRESS" data-level="80" class="chart"><span></span><p></p></div>
-	<div data-label="PHP/MYSQL" data-level="70" class="chart"><span></span><p></p></div>
-	<div data-label="SHOPIFY" data-level="67" class="chart"><span></span><p></p></div>
-	<div data-label="FUEL/CODEIGNITER" data-level="66" class="chart"><span></span><p></p></div>
-	<div data-label="ACTIONSCRIPT" data-level="65" class="chart"><span></span><p></p></div>
-	<div data-label="FACEBOOK/TWITTER API" data-level="64" class="chart"><span></span><p></p></div>
-	<div data-label="PHOTOSHOP" data-level="63" class="chart"><span></span><p></p></div>
-</div>
+<section id="skills">
+    <div class="spacer header">
+        <h1 class = "header-scroll">Skills</h1>
+    </div>
 
+    <div class="container skills">
+    <dl>
+        <dt>HTML</dt>
+        <dd class="skill-percent html" data-percent="90"></dd>
+        <dt>CSS</dt>
+        <dd class="skill-percent css" data-percent="85"></dd>
+        <dt>jQuery</dt>
+        <dd class="skill-percent jquery" data-percent="60"></dd>
+        <dt>SCSS</dt>
+        <dd class="skill-percent scss" data-percent="50"></dd>
+        <dt>Javascript</dt>
+        <dd class="skill-percent javascript" data-percent="40"></dd>
+        <dt>PHP</dt>
+        <dd class="skill-percent php" data-percent="10"></dd>
+    </dl>
+    </div>
+
+    <div class="container spacer">
+    </div>
 </section>
+<br>
     <!-- Footer -->
     <footer id = "contact-form">
+        <h1>Contact me</h1>
         <!-- Contact Form -->
         <div class="container">	
             <?php if($msg != ''): ?>
@@ -249,9 +259,12 @@
     </footer>
     <!-- Bootstrap JS&Jquery Script -->
 
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.0.js"></script> -->
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="scripts/popper.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/index.js"></script>
 </body>
 </html>
